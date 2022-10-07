@@ -36,6 +36,8 @@ In a regex bracket expression represesnt a range of characthers which should mat
 
 ### Character Classes
 
+A character class defines the set of characters which can occur in a string. The character class used in the URL matching regex is \w which matches any alphanumeric character. In a regex the inverse of a character class can be used by capitalizing the character. 
+
 ### The OR Operator
 
 The OR operator in regex is denoted as |. This will return a match as long one portion of the grouping construct is found.  This operator is not used in our URL matching regex. 
