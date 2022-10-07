@@ -21,22 +21,22 @@ The regex which will be discussed in this tutorial is `/^(https?:\/\/)?([\da-z\.
 
 ### Anchors
 
-The anchor characters signify that a string should begin or end with a certain character. The anchor characthers for a regex are an ^ and a $. In the url matching regex discussed in this tutorial the anchor character ^ indicates that the URL must begin with https grouping construct and the $ indicates that the expression must end with  either the 2-6  character grouping construct or an optional grouping construct that contains only alphanumeric characters.
+The anchor characters signify that a string should begin or end with a certain character. The anchor characthers for a regex are an `^` and a `$`. In the url matching regex discussed in this tutorial the anchor character `^` indicates that the URL must begin with https grouping construct and the `$` indicates that the expression must end with  either the 2-6  character grouping construct or an optional grouping construct that contains only alphanumeric characters.
 
 ### Quantifiers
 
-Quantifiers in a regex are signified by {}. In the above url matching regex the quantifiers {2,6} are used to define that the string of characters between a and z must have between 2 and 6 letters. Additional quantifiers used in the URL regex include the ? indicating that a grouping construct should only match 0 or 1 time and the * which indicates a grouping construct should match zero or more times. 
+Quantifiers in a regex are signified by {}. In the above url matching regex the quantifiers `{2,6}` are used to define that the string of characters between a and z must have between 2 and 6 letters. Additional quantifiers used in the URL regex include the `?` indicating that a grouping construct should only match 0 or 1 time and the `*` which indicates a grouping construct should match zero or more times. 
 
 ### Grouping Constructs
-Grouping constructs in a regex are identified by (). The regex will then look for a part of the string to match what is contained within the (). In our URL match regex the first grouping contruct is (https?:\/\/)?. This means that a string which matches must begin with https
+Grouping constructs in a regex are identified by (). The regex will then look for a part of the string to match what is contained within the (). In our URL match regex the first grouping contruct is `(https?:\/\/)`. This means that the beggining of the URL must begin with https
 
 ### Bracket Expressions
 
-In a regex bracket expression represesnt a range of characthers which should match. In the URL match regeex there are 3 bracket expresions. The first [\da-z\.-], signifies that this portion of the string must match either a didget between 0-9 or a lowercase letter. 
+In a regex bracket expression represesnt a range of characthers which should match. In the URL match regeex there are 3 bracket expresions. The first `[\da-z\.-]`, signifies that this portion of the string must match either a didget between 0-9 or a lowercase letter. 
 
 ### Character Classes
 
-A character class defines the set of characters which can occur in a string. The character class used in the URL matching regex is \w which matches any alphanumeric character. In a regex the inverse of a character class can be used by capitalizing the character. 
+A character class defines the set of characters which can occur in a string. The character class used in the URL matching regex is `\w` which matches any alphanumeric character. In a regex the inverse of a character class can be used by capitalizing the character. 
 
 ### The OR Operator
 
@@ -48,7 +48,7 @@ Therer are three types of flags in a regex expression. They are g to specifiy gl
 
 ### Character Escapes
 
-Character escpaes in regex allow charachters to be next to eachother that would outherwise cause literal interetation. In the URL matcher the escapes are noted as \ and are used in the https: grouoping construct to allow two // to be positioned next to eachoter. 
+Character escpaes in regex allow charachters to be next to eachother that would outherwise cause literal interetation. In the URL matcher the escapes are noted as `\` and are used in the https: grouoping construct to allow two // to be positioned next to eachoter. 
 
 ## Author
 
